@@ -1,0 +1,22 @@
+{
+  "banner":"Scapy-toolkit (v{version} {date}})\n Type \"help\" for more information.",
+  "version":"0.0.1",
+  "prompt":"$> ",
+  "commands":{
+    "clear":{
+      "name":"clear",
+      "description":"Clear screen console.",
+      "usage":"clear"
+    },
+    "help":{
+      "name":"help",
+      "description":"Get help about commands.",
+      "usage":"help <commands>"
+    },
+    "version":{
+      "name":"version",
+      "description":"Get console version.",
+      "usage":"version"
+    }
+  }
+}
