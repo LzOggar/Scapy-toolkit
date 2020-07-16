@@ -3,20 +3,78 @@
   "version":"0.0.1",
   "prompt":"$> ",
   "commands":{
+    "set":{
+      "name":"set",
+      "description":"Set environment variables.",
+      "usage":"set <var> <value>",
+      "examples": {
+        "0":"set scan_type icmp"
+      }
+    },
+    "get":{
+      "name":"get",
+      "description":"Get environment variables.",
+      "usage":"get <vars>",
+      "examples": { 
+        "0":"get",
+        "1":"get scan_type",
+        "2":"get scan_type scan_type"
+      }
+    },
+    "scan":{
+      "name":"scan",
+      "description":"Scan target given in parameters (i.e ping, ports, etc.).",
+      "usage":"scan <target>",
+      "examples":{
+        "0":"scan icmp 192.168.0.1",
+        "1":"scan icmp 192.168.0.0/24",
+        "2":"scan tcp-syn 192.168.0.1",
+        "3":"scan tcp-syn 192.168.0.0/24"
+      }
+    },
     "clear":{
       "name":"clear",
       "description":"Clear screen console.",
-      "usage":"clear"
+      "usage":"clear",
+      "examples": {
+        "0":"clear"
+      }
     },
     "help":{
       "name":"help",
       "description":"Get help about commands.",
-      "usage":"help <commands>"
+      "usage":"help <commands>",
+      "examples": {
+        "0":"help",
+        "1":"help set",
+        "2":"help set get scan"
+      }
     },
     "version":{
       "name":"version",
       "description":"Get console version.",
-      "usage":"version"
+      "usage":"version",
+      "examples": {
+        "0":"version"
+      }
+    },
+    "exit":{
+      "name":"exit",
+      "description":"Exit console.",
+      "usage":"exit",
+      "examples": {
+        "0":"exit"
+      }
+    },
+    "history":{
+      "name":"history",
+      "description":"Get history.",
+      "usage":"history <keywords>",
+      "examples": {
+        "0":"history",
+        "1":"history set",
+        "2":"history set get"
+      }
     }
   }
 }
